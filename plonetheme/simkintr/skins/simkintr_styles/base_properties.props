@@ -61,25 +61,25 @@ leftNavLinkText:string=#2A3F0C
 
 leftNavLinkHover:string=#000033
 leftNavBorderHover:string=#000033
-leftNavCurrentLinkText:string=#DBDFD1
-leftNavCurrentLinkBackground:string=#394F18
+leftNavCurrentLinkText:string=#FFF7C0
+leftNavCurrentLinkBackground:string=#494A2F
 leftNavBorder:string=#6F5F14
 
 
-leftNavLinkL2Background:string=#6F5F14
+leftNavLinkL2Background:string=#F1EBDB
 leftNavL2Border:string=#3F3508
-leftNavLinkL2Text:string=#FFE04F
+leftNavLinkL2Text:string=#606100
 leftNavLinkL2Hover:string=#FFE9AF
-leftNavCurrentL2LinkText:string=#EFA21D
+leftNavCurrentL2LinkText:string=#A4531D
 
-contentH1:string=#1A4F00
-contentH2:string=#05274F
-contentH3:string=#043F4F
+contentH1:string=#3A6131
+contentH2:string=#303961
+contentH3:string=#383F5A
 
-footerBackground:string=#394F18
+footerBackground:string=#3F3508
 footerText:string=#F0F0E6
 footerLink:string=#FFE04F
 footerLinkHover:string=#FFC62F
 
-rightPortletHeaderText:string=#EFECE0
-rightPortletHeaderBackground:string=#AF5920
+rightPortletHeaderText:string=#F1EBDB
+rightPortletHeaderBackground:string=#A4531D

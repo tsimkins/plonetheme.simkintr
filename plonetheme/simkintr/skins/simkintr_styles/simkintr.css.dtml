@@ -11,6 +11,7 @@ body {
     background-position: left top;
     background-repeat: repeat-x;
     padding: 0 2em;
+    font-family: Tahoma, Arial, sans-serif;
 }
 
 #visual-portal-wrapper {
@@ -68,18 +69,15 @@ body.section-front-page #portal-breadcrumbs {
 #portal-column-two,
 #portal-column-content {
     padding-top: 1em;
+    font-size: 1.125em;
 }
 
-#portal-column-one,
-#portal-column-two {
-    position: absolute;
-    bottom: 0;
-    top: 0;
+#portal-column-content {
+    font-size: 1.25em;
 }
 
 #portal-column-one {
     margin-left: -100%;
-    background-color: &dtml-columnOneBackground;;
     width: 17.625%;
 }
 
@@ -104,7 +102,7 @@ body.section-front-page #portal-breadcrumbs {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Garamond,Georgia,"Times New Roman",Times,serif;
+    font-family: "Book Antiqua","Times New Roman",Times,serif;
 }
 
 h1, h2 {
@@ -115,7 +113,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 220%;
+    font-size: 250%;
     color: &dtml-contentH1;;
     font-weight: bold;
 }
@@ -124,14 +122,14 @@ h2, h2.tileHeadline,
 h2.tileHeadline a {
     color: &dtml-contentH2;;
     font-weight: bold;
-    font-size: 160%;
+    font-size: 175%;
     border-bottom: none;
 }
 
 h3 {
     color: &dtml-contentH3;;
     font-weight: bold;
-    font-size: 140%;
+    font-size: 115%;
     border-bottom: none;
 }
 
@@ -150,6 +148,7 @@ h3 {
     padding: 0.25em;
     margin: 0;
     font-size: 1em;
+    text-align: center;
 }
 
 #portal-footer a {
@@ -172,9 +171,10 @@ h3 {
 }
 
 #portal-column-two .portletHeader, 
-#portal-column-two .portletHeader a {
+#portal-column-two .portletHeader a,
+#portal-column-two .portletHeader a:hover {
     font-weight: bold;
-	color: &dtml-rightPortletHeaderText;;
+	color: &dtml-rightPortletHeaderText; !important;
 }
 
 .icons-on dl.portletNavigationTree .contenttype-document,
@@ -194,6 +194,7 @@ h3 {
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
     border: none;
     margin: 0;
+    padding: 0.25em 0 0 0.75em;
 }
 
 #portal-column-one .navTreeItem a,
@@ -253,7 +254,6 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {
     color: &dtml-leftNavLinkL2Text; !important;
 	display: block;
 	font-size: 1em;
-	font-weight: bold;
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -273,6 +273,7 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {
 	color: &dtml-leftNavCurrentL2LinkText; !important;
 	background-color: transparent;
     border: none !important;
+    font-weight: bold;
 }
 
 #portal-column-one ul.navTreeLevel2 {
@@ -325,7 +326,7 @@ img.image-right {
 
 #content .documentDescription, 
 #content #description {
-	font-size: 1.25em;
+	font-size: 1.375em;
 	font-weight: normal;
 	color: #000000;
     line-height: 1.5em;
@@ -353,6 +354,56 @@ legend {
     color: #8F5323;
 }
 
+#content-core dd {
+   margin: 0 0 1em;
+}
+
+#content a:link, dl.portlet a:link {
+    color: 
+}
+
+#portal-column-content a:link,
+#portal-column-content a:visited {
+   color: #136CC0 !important;
+}
+
+#portal-column-content .effectiveDate {
+    font-size: 0.875em;
+    color: #444444;
+}
+
+#portal-column-content .documentByLine {
+    line-height: 1.5em;
+    margin-bottom: 0.375em;
+}
+
+table.invisible td, table.invisible th, table.plain td, table.plain th, table.listing td, table.listing th {
+    padding: 0.375em 0.5em;
+}
+
+table.listing {
+    font-size: 0.9375em;
+}
+
+table.listing th {
+    background-color: &dtml-rightPortletHeaderBackground;;
+    color: &dtml-rightPortletHeaderText;;
+    border: 1px solid &dtml-bodyBackground;;
+}
+
+table.listing tbody tr td {
+    background-color: &dtml-contentBackground;;
+    border: 1px solid &dtml-bodyBackground;;
+}
+
+table.listing tbody tr.odd td {
+    background-color: &dtml-leftNavButtonBackground;;
+}
+
+#content div.newsImageContainer p.discreet {
+    width: auto;
+    top: -2.875em;
+}
 
 /* YOUR CSS RULES STOP HERE */ 
 
