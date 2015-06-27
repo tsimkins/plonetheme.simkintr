@@ -1,0 +1,52 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plonetheme.simkintr">
+
+  <!-- 'simkintr' Zope 3 browser layer -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="simkintr"
+      />
+
+    <browser:page
+        for="*"
+        name="sunburstview"
+        class=".sunburstview.SunburstView"
+        permission="zope.Public"
+        allowed_interface="plonetheme.sunburst.browser.interfaces.ISunburstView"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+    <browser:viewlet
+        name="plone.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+        layer=".interfaces.IThemeSpecific"
+        class="plone.app.layout.viewlets.common.PathBarViewlet"
+        template="templates/path_bar.pt"
+        permission="zope2.View"
+        />
+
+    <!-- Footer -->
+
+    <browser:viewlet
+        name="plone.footer"    
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        layer=".interfaces.IThemeSpecific"
+        template="templates/footer.pt"
+        permission="zope.Public" 
+        />
+
+    <browser:viewlet
+        name="plone.personal_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        layer=".interfaces.IThemeSpecific"
+        class="plone.app.layout.viewlets.common.PersonalBarViewlet"
+        permission="zope2.View"
+        template="templates/personal_bar.pt"
+        />
+        
+
+
+</configure>

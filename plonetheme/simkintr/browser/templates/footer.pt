@@ -1,0 +1,9 @@
+<div id="portal-footer">
+
+    &copy;
+    <span tal:omit-tag=""
+          tal:define="now modules/DateTime/DateTime"
+          tal:content="now/year" />
+    <a href = "mailto:tim.simkins@tandj.net">Tim Simkins</a>
+
+</div>

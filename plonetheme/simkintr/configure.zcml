@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="plonetheme.simkintr">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <include package=".browser" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Tim Simkins' Website Theme"
+      directory="profiles/default"
+      description="Extension profile for the Tim Simkins' Website Theme Plone theme."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <!-- File System Directory Views registration -->
+  <cmf:registerDirectory name="simkintr_images"/>
+  <cmf:registerDirectory name="simkintr_templates"/>
+  <cmf:registerDirectory name="simkintr_styles"/>
+  <cmf:registerDirectory name="simkintr_javascript"/>
+
+</configure>

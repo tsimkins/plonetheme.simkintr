@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="simkintr">
+
+ <object name="simkintr_images"
+    meta_type="Filesystem Directory View"
+    directory="plonetheme.simkintr:skins/simkintr_images"/>
+ <object name="simkintr_templates"
+    meta_type="Filesystem Directory View"
+    directory="plonetheme.simkintr:skins/simkintr_templates"/>
+ <object name="simkintr_styles"
+    meta_type="Filesystem Directory View"
+    directory="plonetheme.simkintr:skins/simkintr_styles"/>
+ <object name="simkintr_javascript"
+    meta_type="Filesystem Directory View"
+    directory="plonetheme.simkintr:skins/simkintr_javascript"/>
+
+ <skin-path name="simkintr" based-on="Plone Default">
+  <layer name="simkintr_images"
+     insert-after="custom"/>
+  <layer name="simkintr_templates"
+     insert-after="simkintr_images"/>
+  <layer name="simkintr_styles"
+     insert-after="simkintr_templates"/>
+  <layer name="simkintr_javascript"
+     insert-after="simkintr_styles"/>
+  <layer name="classic_styles"
+      insert-after="simkintr_javascript" />
+ </skin-path>
+
+</object>

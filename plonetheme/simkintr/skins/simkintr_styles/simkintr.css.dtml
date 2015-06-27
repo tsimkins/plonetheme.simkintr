@@ -1,0 +1,361 @@
+/*
+  <dtml-with base_properties> (do not remove this)
+  <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
+*/
+
+/* YOUR CSS RULES START HERE */
+
+body {
+    background-color: &dtml-bodyBackground;;
+    background-image: url('&dtml-portal_url;/body-gradient.jpg');
+    background-position: left top;
+    background-repeat: repeat-x;
+    padding: 0 2em;
+}
+
+#visual-portal-wrapper {
+    margin: 1em auto;
+    min-width: &dtml-portalMinWidth;;
+    max-width: &dtml-portalMaxWidth;;
+    background-color: &dtml-contentBackground;;
+}
+
+#portal-top {
+    background-color: &dtml-darkBodyBackground;;
+    background-image: url('&dtml-portal_url;/header-background.jpg');
+    background-color: &dtml-headerBackground;;
+    height: 100px;
+    background-position: top center;
+    text-align: left;
+    border-style: solid;
+    border-width: 2px 2px 0 2px;
+    border-color: &dtml-siteBorder;;
+}
+
+body.section-front-page #portal-breadcrumbs {
+    display: none;
+}
+
+#portal-breadcrumbs {
+    border-bottom: none;
+    padding-bottom: 1em;
+    padding-left: 0;
+    color: #2B3F0C;
+    font-weight: bold;
+}
+
+#portal-breadcrumbs a {
+    color: #618F3E;
+    font-weight: normal;
+}
+
+.breadcrumbSeparator {
+    color: #8F8450;
+}
+
+#portal-columns {
+    background-color: &dtml-contentBackground;;
+    background-image: url('&dtml-portal_url;/content-background.gif');
+    background-position: top center;
+    background-repeat: repeat-y;
+    border-style: solid;
+    border-width: 0 2px;
+    border-color: &dtml-siteBorder;;
+    
+}
+
+#portal-column-one,
+#portal-column-two,
+#portal-column-content {
+    padding-top: 1em;
+}
+
+#portal-column-one,
+#portal-column-two {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+
+#portal-column-one {
+    margin-left: -100%;
+    background-color: &dtml-columnOneBackground;;
+    width: 17.625%;
+}
+
+#portal-column-one .portlet {
+    background-color: transparent; 
+    border-bottom: none;
+}
+
+#portal-column-one .portletItem {
+    border-left: none;
+    border-right: none;
+    padding: 0;
+}
+
+#portal-column-one .portletNavigationTree .portletHeader {
+    display: none;
+}
+
+#content {
+    background-color: transparent;
+    min-height: 27em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Garamond,Georgia,"Times New Roman",Times,serif;
+}
+
+h1, h2 {
+    letter-spacing: -0.025em;
+    border-bottom: 1px solid #9f8f45;
+    margin-bottom: 0.375em;
+    line-height: 1.125em;
+}
+
+h1 {
+    font-size: 220%;
+    color: &dtml-contentH1;;
+    font-weight: bold;
+}
+
+h2, h2.tileHeadline, 
+h2.tileHeadline a {
+    color: &dtml-contentH2;;
+    font-weight: bold;
+    font-size: 160%;
+    border-bottom: none;
+}
+
+h3 {
+    color: &dtml-contentH3;;
+    font-weight: bold;
+    font-size: 140%;
+    border-bottom: none;
+}
+
+
+#portal-footer-wrapper {
+    margin: 0;
+    background-color: &dtml-footerBackground;;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: &dtml-footerBackground;;
+    color: &dtml-footerText;;
+}
+
+#portal-footer {
+    background-color: transparent;
+    padding: 0.25em;
+    margin: 0;
+    font-size: 1em;
+}
+
+#portal-footer a {
+    color: &dtml-footerLink;;
+}
+
+#portal-footer a:hover {
+    color: &dtml-footerLinkHover;;
+}
+
+.LSBox input.searchButton {
+	background-image: none;
+    padding: 1px;
+}
+
+#portal-column-two .portletHeader {
+	font-size: 1.1em;
+	padding: 0.25em 1em;
+	background-color: &dtml-rightPortletHeaderBackground;;
+}
+
+#portal-column-two .portletHeader, 
+#portal-column-two .portletHeader a {
+    font-weight: bold;
+	color: &dtml-rightPortletHeaderText;;
+}
+
+.icons-on dl.portletNavigationTree .contenttype-document,
+.icons-on dl.portletNavigationTree .contenttype-event,
+.icons-on dl.portletNavigationTree .contenttype-folder,
+.icons-on dl.portletNavigationTree .contenttype-link,
+.icons-on dl.portletNavigationTree .contenttype-news-item,
+.icons-on dl.portletNavigationTree .contenttype-plone-site,
+.icons-on dl.portletNavigationTree .contenttype-topic,
+.icons-on #plone-contentmenu-factories .contenttype-file,
+.icons-on #plone-contentmenu-factories .contenttype-image {
+    line-height: 1.5em;
+}
+
+/* Left Navigation */
+
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+    border: none;
+    margin: 0;
+}
+
+#portal-column-one .navTreeItem a,
+#portal-column-one dd.portletItem .navTreeItem a,
+#portal-column-one .navTreeItem a:hover,
+#portal-column-one dd.portletItem .navTreeItem a:hover {
+	border: none;
+	background-color: transparent;
+}
+
+#portal-column-one .navTreeCurrentItem {
+	background-color: transparent;
+	border: none;
+}
+
+#portal-column-one ul.navTreeLevel0>li.navTreeItem a {
+	background-color: &dtml-leftNavButtonBackground;;
+    color: &dtml-leftNavLinkText; !important;
+	display: block;
+	font-size: 1.125em;
+	font-weight: normal;
+	padding: 0.125em 0.375em;
+	margin: 0;
+	border: 1px solid &dtml-leftNavBorder;;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#portal-column-one ul.navTreeLevel0>li.navTreeItem a:hover {
+	background-color: &dtml-leftNavButtonBackground;;
+	border: 1px solid &dtml-leftNavBorderHover;;
+	color: &dtml-leftNavLinkHover; !important;
+}
+
+#portal-column-one ul.navTreeLevel0>li.navTreeItem a.navTreeCurrentItem,
+#portal-column-one ul.navTreeLevel0>li.navTreeItem a.navTreeItemInPath:hover, 
+#portal-column-one ul.navTreeLevel0>li.navTreeItem a.navTreeItemInPath {
+	color: &dtml-leftNavCurrentLinkText; !important;
+	background-color: &dtml-leftNavCurrentLinkBackground;;
+    border: 1px solid &dtml-leftNavBorder; !important;
+}
+
+#portal-column-one ul.navTreeLevel1 {
+	background-color: &dtml-leftNavLinkL2Background;;
+    border: 1px solid &dtml-leftNavL2Border; !important;
+	margin: 0.25em 0 0.75em 0.5em;
+}
+
+#portal-column-one ul.navTreeLevel1>li.navTreeItem {
+    margin: 0.375em 0.375em 0.5em 0.75em;
+    padding-left: 0;
+}
+
+#portal-column-one ul.navTreeLevel1>li.navTreeItem a {
+	background-color: transparent;
+    color: &dtml-leftNavLinkL2Text; !important;
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	border: none;
+	line-height: 1.25em;
+}
+
+#portal-column-one ul.navTreeLevel1>li.navTreeItem a:hover {
+	background-color: transparent;
+	border: none;
+	color: &dtml-leftNavLinkL2Hover;;
+}
+
+#portal-column-one ul.navTreeLevel1>li.navTreeItem a.navTreeCurrentItem,
+#portal-column-one ul.navTreeLevel1>li.navTreeItem a.navTreeCurrentItem:hover,
+#portal-column-one ul.navTreeLevel1>li.navTreeItem a.navTreeItemInPath, 
+#portal-column-one ul.navTreeLevel1>li.navTreeItem a.navTreeItemInPath:hover {
+	color: &dtml-leftNavCurrentL2LinkText; !important;
+	background-color: transparent;
+    border: none !important;
+}
+
+#portal-column-one ul.navTreeLevel2 {
+	margin-top: 0;
+	margin-bottom: 0.25em;
+}
+
+#portal-column-one ul.navTreeLevel2>li.navTreeItem a {
+	padding: 0.1em 0.5em 0.5em 0.5em;
+}
+
+#content-core dd .description {
+	font-weight: normal;
+}
+
+#portal-column-one dl.connect {
+	margin-top: 0.5em;
+}
+
+#portal-column-one dl.connect dd {
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+    font-size: 0.875em;
+}
+
+#portal-column-one dl.connect dd a {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#portal-column-one dl.connect dd a img {
+	margin-right: 6px;
+	vertical-align: middle;
+}
+
+#portal-column-one .portletStaticText {
+    margin: 2em 0.75em 1em 0.75em;
+}
+
+#portal-column-one .portletStaticText h2 {
+    font-size: 1.25em;
+    color: &dtml-leftNavCurrentLinkBackground;;
+    border-bottom: 1px solid &dtml-leftNavButtonBackground;;
+}
+
+img.image-left,
+img.image-right {
+	border: none;
+}
+
+#content .documentDescription, 
+#content #description {
+	font-size: 1.25em;
+	font-weight: normal;
+	color: #000000;
+    line-height: 1.5em;
+    margin: 0 0 0.5em;
+}
+
+.tileItem {
+    border-top: none;
+}
+
+h2.tileHeadline {
+    margin-top: 0;
+}
+
+.documentActions li, legend {
+    background-color: &dtml-contentBackground;;
+}
+
+legend {
+    font-size: 1.1em;
+      font-weight: bold;
+}
+
+.fieldRequired {
+    color: #8F5323;
+}
+
+
+/* YOUR CSS RULES STOP HERE */ 
+
+/* </dtml-with> */
+
+
