@@ -432,19 +432,24 @@ html.kupu-html body#content {
 
 /* Reloading faceted search */
 
-.facet .label {
-    font-weight: normal;
-    font-size: 0.75em;
-}
-
-.facet {
+#content .facet {
     width: 25%;
     float: left;
 }
 
-.facet ul {
+#content .facet label {
+    font-weight: normal;
+    font-size: 0.75em;
+}
+
+#content .facet ul {
     list-style-type: none;
-    padding-left: 0.5em;
+    padding-left: 1em;
+    margin-left: 0;
+}
+
+#content .facet ul li {
+    line-height: 1em;
 }
 
 li.disabled {
