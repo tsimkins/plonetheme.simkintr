@@ -38,15 +38,4 @@
         permission="zope.Public" 
         />
 
-    <browser:viewlet
-        name="plone.personal_bar"
-        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-        layer=".interfaces.IThemeSpecific"
-        class="plone.app.layout.viewlets.common.PersonalBarViewlet"
-        permission="zope2.View"
-        template="templates/personal_bar.pt"
-        />
-        
-
-
 </configure>
