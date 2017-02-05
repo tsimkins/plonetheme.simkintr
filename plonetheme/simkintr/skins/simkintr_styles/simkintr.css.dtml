@@ -430,6 +430,27 @@ html.kupu-html body#content {
     line-height: 1.25em;
 }
 
+/* Reloading faceted search */
+
+.facet .label {
+    font-weight: normal;
+    font-size: 0.75em;
+}
+
+.facet {
+    width: 25%;
+    float: left;
+}
+
+.facet ul {
+    list-style-type: none;
+    padding-left: 0.5em;
+}
+
+li.disabled {
+    color: #999;
+}
+
 /* YOUR CSS RULES STOP HERE */ 
 
 /* </dtml-with> */
