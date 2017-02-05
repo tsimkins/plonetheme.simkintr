@@ -52,11 +52,11 @@ headerBackground:string=#6F5F14
 
 siteBorder:string=#C0AA6D
 
-contentBackground:string=#F0F0E6
+contentBackground:string=#EFEBE0
 
 columnOneBackground:string=#DFD4B5
 
-leftNavButtonBackground:string=#EFE7D1
+leftNavButtonBackground:string=#DFD5C3
 leftNavLinkText:string=#2A3F0C
 
 leftNavLinkHover:string=#000033
@@ -72,11 +72,11 @@ leftNavLinkL2Text:string=#606100
 leftNavLinkL2Hover:string=#FFE9AF
 leftNavCurrentL2LinkText:string=#A4531D
 
-contentH1:string=#3A6131
+contentH1:string=#354F27
 contentH2:string=#303961
 contentH3:string=#383F5A
 
-footerBackground:string=#3F3508
+footerBackground:string=#3A4600
 footerText:string=#F0F0E6
 footerLink:string=#FFE04F
 footerLinkHover:string=#FFC62F

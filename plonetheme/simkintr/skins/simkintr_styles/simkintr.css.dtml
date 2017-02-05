@@ -22,7 +22,6 @@ body {
 }
 
 #portal-top {
-    background-color: &dtml-darkBodyBackground;;
     background-image: url('&dtml-portal_url;/header-background.jpg');
     background-color: &dtml-headerBackground;;
     height: 100px;
@@ -56,9 +55,11 @@ body.section-front-page #portal-breadcrumbs {
 
 #portal-columns {
     background-color: &dtml-contentBackground;;
+/*
     background-image: url('&dtml-portal_url;/content-background.gif');
     background-position: top center;
     background-repeat: repeat-y;
+*/
     border-style: solid;
     border-width: 0 2px;
     border-color: &dtml-siteBorder;;
@@ -133,6 +134,10 @@ h3 {
     border-bottom: none;
 }
 
+h2, h3 {
+    margin-bottom: 0.125em;
+    margin-top: 1em;
+}
 
 #portal-footer-wrapper {
     margin: 0;
@@ -358,13 +363,14 @@ legend {
    margin: 0 0 1em;
 }
 
-#content a:link, dl.portlet a:link {
-    color: 
-}
-
 #portal-column-content a:link,
 #portal-column-content a:visited {
    color: #136CC0 !important;
+}
+
+#portal-column-content a:hover {
+   color: #0E4DAC !important;
+   border-bottom: 1px solid #0E4DAC;
 }
 
 #portal-column-content .effectiveDate {
@@ -389,6 +395,7 @@ table.listing th {
     background-color: &dtml-rightPortletHeaderBackground;;
     color: &dtml-rightPortletHeaderText;;
     border: 1px solid &dtml-bodyBackground;;
+    vertical-align: bottom;
 }
 
 table.listing tbody tr td {
@@ -403,6 +410,24 @@ table.listing tbody tr.odd td {
 #content div.newsImageContainer p.discreet {
     width: auto;
     top: -2.875em;
+}
+
+body.section-reloading table.listing td, 
+body.section-reloading table.listing th {
+    padding: 0.375em 0.25em;
+    font-size: 0.9375em;
+    line-height: 1.125em;
+    font-family: Garamond, "Times New Roman", serif;
+}
+
+html.kupu-html body#content {
+    background-color: #FFFFFF;
+    background-image: none;
+    font-size: 125%;
+}
+
+#content .discreet {
+    line-height: 1.25em;
 }
 
 /* YOUR CSS RULES STOP HERE */ 
